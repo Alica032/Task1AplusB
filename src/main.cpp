@@ -72,6 +72,7 @@ int main()
             OCL_SAFE_CALL(clGetDeviceInfo(device, CL_DEVICE_TYPE, sizeof(deviceType), &deviceType, nullptr));
 
             if(deviceType == CL_DEVICE_TYPE_GPU){
+
                 deviceId = device;
                 gpu_use = 1;
                 break;
