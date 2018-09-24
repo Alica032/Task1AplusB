@@ -14,7 +14,7 @@
 // - Четвертым и последним аргументом должно быть передано количество элементов в каждом массиве
 // (unsigned int, главное чтобы тип был согласован с типом в соответствующем clSetKernelArg в T0D0 10)
 
-__kernel void aplusb(__global const float *a, __global const float *b, __global float *c, unsigned int n)
+__kernel void aplusb(__global const float * a, __global const float *b, __global float *c, unsigned int n)
 {
     // Узнать какой workItem выполняется в этом потоке поможет функция get_global_id
     // см. в документации https://www.khronos.org/registry/OpenCL/sdk/1.2/docs/man/xhtml/
